@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RapidScript Screening</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		.dismiss {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 90vw;
+			padding: 1px 10px;
+			margin: auto;
+			border-radius: 5px;
+		}
+		#error {
+			background-color: rgb(252, 203, 203);
+			color: red;
+			border: 1px solid red;
+		}
+		#submit {
+			background-color: rgb(200, 255, 200);
+			color: green;
+			border: 1px solid green;
+		}
+		.hidden {
+			display: none;
+		}
+		.btn {
+			padding: 5px;
+			margin: 5px;
+		}
+		.form {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>RapidScript</h1>
+	<div id="error" class="dismiss hidden">
+		<p>Sorry, the form could not be submitted</p>
+		<span>&times;</span>
+	</div>
+	<div id="submit" class="dismiss hidden">
+		<p>Congratulations, the form was submitted successfully</p>
+		<span>&times;</span>
+	</div>
+	<div class="form">
+		<form>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname">
+		</form>
+		<button class="btn">Submit!</button>
+	</div>
+</body>
+</html>
